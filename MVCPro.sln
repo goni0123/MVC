@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCPro", "MVCPro\MVCPro.csproj", "{57690134-2D0B-4B75-8596-7A9785686978}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCPro", "MVCPro\MVCPro.csproj", "{57690134-2D0B-4B75-8596-7A9785686978}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRazor_Temp", "WebRazor_Temp\WebRazor_Temp.csproj", "{7FF26D31-2527-4AD5-BD43-AAE3276FBCB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{57690134-2D0B-4B75-8596-7A9785686978}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57690134-2D0B-4B75-8596-7A9785686978}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57690134-2D0B-4B75-8596-7A9785686978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FF26D31-2527-4AD5-BD43-AAE3276FBCB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FF26D31-2527-4AD5-BD43-AAE3276FBCB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FF26D31-2527-4AD5-BD43-AAE3276FBCB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FF26D31-2527-4AD5-BD43-AAE3276FBCB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
