@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCPro", "MVCPro\MVCPro.csproj", "{57690134-2D0B-4B75-8596-7A9785686978}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRazor_Temp", "WebRazor_Temp\WebRazor_Temp.csproj", "{7FF26D31-2527-4AD5-BD43-AAE3276FBCB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebRazor_Temp", "WebRazor_Temp\WebRazor_Temp.csproj", "{7FF26D31-2527-4AD5-BD43-AAE3276FBCB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
