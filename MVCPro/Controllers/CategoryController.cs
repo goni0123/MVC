@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MVCPro.Data;
-using MVCPro.Models;
+using MVC.Models;
+using MVCPro.DataAccess.Data;
 using System.Text.RegularExpressions;
 
-namespace MVCPro.Controllers
+namespace MVCPro.DataAccess.Controllers
 {
     public class CategoryController : Controller
     {

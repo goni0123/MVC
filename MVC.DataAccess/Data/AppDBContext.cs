@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MVCPro.Models;
+using MVC.Models;
 
-namespace MVCPro.Data
+namespace MVCPro.DataAccess.Data
 {
     public class AppDBContext : DbContext
     {

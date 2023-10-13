@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MVCPro.Models;
+using MVC.Models;
 using System.Diagnostics;
 
 namespace MVCPro.Controllers

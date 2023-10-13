@@ -4,14 +4,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCPro", "MVCPro\MVCPro.csproj", "{57690134-2D0B-4B75-8596-7A9785686978}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D6D51CB-1551-4DDE-92E5-A495339A4E7B} = {6D6D51CB-1551-4DDE-92E5-A495339A4E7B}
+		{A626989E-FAB7-4849-B83C-E800EAE95A50} = {A626989E-FAB7-4849-B83C-E800EAE95A50}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebRazor_Temp", "WebRazor_Temp\WebRazor_Temp.csproj", "{7FF26D31-2527-4AD5-BD43-AAE3276FBCB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.DataAccess", "MVC.DataAccess\MVC.DataAccess.csproj", "{A626989E-FAB7-4849-B83C-E800EAE95A50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC.DataAccess", "MVC.DataAccess\MVC.DataAccess.csproj", "{A626989E-FAB7-4849-B83C-E800EAE95A50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.Models", "MVC.Models\MVC.Models.csproj", "{6D6D51CB-1551-4DDE-92E5-A495339A4E7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC.Models", "MVC.Models\MVC.Models.csproj", "{6D6D51CB-1551-4DDE-92E5-A495339A4E7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.Utility", "MVC.Utility\MVC.Utility.csproj", "{B73A73A5-A1ED-4E89-84C9-D8899F11F61A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC.Utility", "MVC.Utility\MVC.Utility.csproj", "{B73A73A5-A1ED-4E89-84C9-D8899F11F61A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

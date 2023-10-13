@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using MVCPro.Data;
+using MVCPro.DataAccess.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
