@@ -18,6 +18,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC.Models", "MVC.Models\MV
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC.Utility", "MVC.Utility\MVC.Utility.csproj", "{B73A73A5-A1ED-4E89-84C9-D8899F11F61A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_Service_LifeTime", "DI_Service_LifeTime\DI_Service_LifeTime.csproj", "{C8E26179-1264-4AE9-858C-5BA47102CD3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{B73A73A5-A1ED-4E89-84C9-D8899F11F61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B73A73A5-A1ED-4E89-84C9-D8899F11F61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B73A73A5-A1ED-4E89-84C9-D8899F11F61A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8E26179-1264-4AE9-858C-5BA47102CD3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E26179-1264-4AE9-858C-5BA47102CD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8E26179-1264-4AE9-858C-5BA47102CD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E26179-1264-4AE9-858C-5BA47102CD3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
