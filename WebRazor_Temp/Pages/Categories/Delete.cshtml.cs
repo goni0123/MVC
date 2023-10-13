@@ -1,16 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using WebRazor_Temp.Data;
-using WebRazor_Temp.Models;
+using MVC.Models;
+using MVCPro.DataAccess.Data;
 
 namespace WebRazor_Temp.Pages.Categories
 {
     [BindProperties]
     public class DeleteModel : PageModel
     {
-        public ApplicationDBContext _db;
+        public AppDBContext _db;
         public Category Category { get; set; }
-        public DeleteModel(ApplicationDBContext db)
+        public DeleteModel(AppDBContext db)
         {
             _db = db;
         }

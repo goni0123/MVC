@@ -1,16 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using WebRazor_Temp.Data;
-using WebRazor_Temp.Models;
+using MVC.Models;
+using MVCPro.DataAccess.Data;
 
 namespace WebRazor_Temp.Pages.Categories
 {
     [BindProperties]
     public class CreateModel : PageModel
     {
-        private readonly ApplicationDBContext _db;
+        private readonly AppDBContext _db;
         public Category Category { get; set; }
-        public CreateModel(ApplicationDBContext db)
+        public CreateModel(AppDBContext db)
         {
             _db = db;
         }

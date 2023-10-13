@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
-using WebRazor_Temp.Data;
+using MVCPro.DataAccess.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<ApplicationDBContext>(
+builder.Services.AddDbContext<AppDBContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 var app = builder.Build();

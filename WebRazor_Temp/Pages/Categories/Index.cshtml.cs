@@ -1,15 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using WebRazor_Temp.Data;
-using WebRazor_Temp.Models;
+using MVC.Models;
+using MVCPro.DataAccess.Data;
 
 namespace WebRazor_Temp.Pages.Categories
 {
     public class IndexModel : PageModel
     {
-        private readonly ApplicationDBContext _db;
+        private readonly AppDBContext _db;
         public List<Category> CategoryList { get; set; }
-        public IndexModel(ApplicationDBContext db)
+        public IndexModel(AppDBContext db)
         {
             _db = db;            
         }
