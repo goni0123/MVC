@@ -1,10 +1,15 @@
 ﻿@model Category
-
-<form method="post">
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Delete Category</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4"><form method="post">
     <input asp-for="Id" hidden/>
     <div class="border p-3 mt-4">
-        
-        <div class="text-primary"><h2>Delete Category</h2></div>
         <hr />
         <div asp-validation-summary="All"></div>
         <div class="mb-3 row p-1">
@@ -33,3 +38,8 @@
 
     </div>
 </form>
+
+    </div>
+</div>
+
+
