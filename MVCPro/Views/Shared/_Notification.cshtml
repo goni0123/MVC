@@ -1,18 +1,16 @@
 ﻿@if (TempData["success"] != null)
 {
-    <script src="~/lib/jquery/dist/jquery.min.js" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/toastr.min.js"></script>
     <script type="text/javascript">
         toastr.success('@TempData["success"]');
     </script>
-    <h1>agon</h1>
-    
 }
 @if (TempData["error"] != null)
 {
-    <script src="~/lib/jquery/dist/jquery.min.js" />
+    <script src="~/lib/jquery/dist/jquery.min.js" ></script>
     <script src="~/js/toastr.min.js"></script>
     <script type="text/javascript">
-        toastr.error('@TempData["success"]');
+        toastr.error('@TempData["error"]');
     </script>
 }
