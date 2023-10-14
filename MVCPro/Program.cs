@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using MVC.DataAccess.Repository;
+using MVC.DataAccess.Repository.IRepository;
 using MVCPro.DataAccess.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<AppDBContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
-
+builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
