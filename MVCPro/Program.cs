@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<AppDBContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
-builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
+builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -30,6 +30,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

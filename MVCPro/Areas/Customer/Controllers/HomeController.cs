@@ -2,8 +2,9 @@
 using MVC.Models;
 using System.Diagnostics;
 
-namespace MVCPro.Controllers
+namespace MVCPro.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
