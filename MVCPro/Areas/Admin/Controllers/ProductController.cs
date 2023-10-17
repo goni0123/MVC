@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using MVC.DataAccess.Repository.IRepository;
 using MVC.Models;
+using MVC.Models.ViewModel;
 
 namespace MVCPro.Areas.Admin.Controllers
 {
@@ -14,24 +16,45 @@ namespace MVCPro.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            List<Product> objCategoryList = _unit.Product.GetAll().ToList();
-            return View(objCategoryList);
+            List<Product> objProductList = _unit.Product.GetAll().ToList();
+            return View(objProductList);
+
         }
         public IActionResult Create()
         {
-            return View();
+            ProductVM productVM = new ()
+            {
+                CategoryList = _unit.Category
+                .GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                }),
+                Product = new Product()
+            };
+            return View(productVM);
         }
         [HttpPost]
-        public IActionResult Create(Product obj)
+        public IActionResult Create(ProductVM productVM)
         {
             if (ModelState.IsValid)
             {
-                _unit.Product.Add(obj);
+                _unit.Product.Add(productVM.Product);
                 _unit.Save();
                 TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
-            return View();
+            else
+            {
+                productVM.CategoryList = _unit.Category
+                .GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                });
+
+                return View(productVM);
+            }
         }
         public IActionResult Edit(int id)
         {
